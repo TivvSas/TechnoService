@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
 public class Tecnico {
 
     @Id // Indica que este atributo es la clave primaria
-
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Indica que el ID se generará automáticamente
     
     @Column(name = "id_tecnico", nullable = false)

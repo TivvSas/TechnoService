@@ -1,9 +1,8 @@
 package com.technoservice.tecnico_api.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.technoservice.tecnico_api.service.TecnicoService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -12,7 +11,10 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor// Genera constructor con atributos final
 
 public class TecnicoController {
-    private final TecnicoService tecnicoService;
 
-    
+     @GetMapping("/")
+    public String hola() {
+        return "Hola mundo";
+    }
+
 }
